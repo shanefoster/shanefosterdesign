@@ -377,6 +377,7 @@ header {
   font-size: 18px; }
 
 .Header-ginger {
+  border-radius: 50%;
   height: 112px;
   width: 112px; }
 
