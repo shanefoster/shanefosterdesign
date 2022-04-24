@@ -154,7 +154,7 @@ small,
 .small-text {
   font-family: "Poppins", sans-serif;
   color: #6e7479;
-  font-size: small-fontSize;
+  font-size: 12px;
   letter-spacing: 0.0222222222em; }
 
 cite {
