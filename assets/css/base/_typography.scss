@@ -88,7 +88,7 @@ small,
 .small-text {
   font-family: $base-font-family;
   color:      $text;
-  font-size:  small-fontSize;
+  font-size:  $small-fontSize;
   letter-spacing: $small-letterSpacing;
 }
 
