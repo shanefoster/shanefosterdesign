@@ -9,23 +9,20 @@
   {% assign linkedin_back = 'background-image:url(/assets/img/linkedin_light.svg);' %}
 {% endif %}
 -->
+
 {% if page.url == "/" %}
   {% assign header_back = 'background:#fcfcfc;' %}
   {% assign header_bar_style = 'background:#fff;border-bottom:1px solid #eee;' %}
-{% elsif page.title == 'DanceLinked' %}
-  {% assign header_back = 'background:#FF6B6B;' %}
+{% elsif page.title == 'moovel' %}
+  {% assign brand-color = '#B82A35;' %}
 {% elsif page.title == 'TeamSnap' %}
-  {% assign header_back = 'background:#1667AC;' %}
-{% elsif page.title == 'AppNexus – Tango' %}
-  {% assign header_back = 'background:#0F6161;' %}
+  {% assign brand-color = '#1667AC;' %}
+{% elsif page.title == 'Cloudability' %}
+  {% assign brand-color = '#0E95CC' %}
 {% elsif page.title == 'AppNexus – ANM' %}
-  {% assign header_back = 'background:#FD8426;' %}
+  {% assign brand-color = '#FD8426;' %}
 {% elsif page.title == 'Fantuition' %}
-  {% assign header_back = 'background:#0093EB;' %}
-{% elsif page.title == 'University of Oregon Dance Team' %}
-  {% assign header_back = 'background:#349F77;' %}
-{% elsif page.title == 'CSS Zen Garden – Vegas' %}
-  {% assign header_back = 'background:#CC1C2C;' %}
+  {% assign brand-color = '#0093EB;' %}
 {% endif %}
 
 <header class="Header" role="banner">
@@ -33,16 +30,16 @@
     <div class="Container">
       <div class="Grid Grid--alignMiddle">
         <div class="Grid-cell u-sm-size1of8">
-          <a class="Header-logo" href="/"><strong>shane</strong>foster.</a>
+          <a class="Header-logo" href="/casestudies"><strong>shane</strong>foster.</a>
         </div>
         <div class="Grid-cell u-sm-size6of8 u-sm-textRight">
           {% assign current = page.url | downcase | split: '/' %}
           
           <nav>
             <ul class="nav list--inline">
-              <li><a href='/' {% if current[1] == null %}class='current'{% endif %}>Work</a></li>
-              <li><a href='/about' {% if current[1] == 'about' %}class='current'{% endif %}>About</a></li>
-              <li><a href='/contact' {% if current[1] == 'contact' %}class='current'{% endif %}>Contact</a></li>
+              <li><a href='/casestudies' {% if current[1] == null %}class='current'{% endif %}>Case Studies</a></li>
+              <li><a href='/casestudies/about' {% if current[1] == 'about' %}class='current'{% endif %}>About</a></li>
+              <li><a href='/casestudies/contact' {% if current[1] == 'contact' %}class='current'{% endif %}>Contact</a></li>
             </ul>
           </nav>
 
