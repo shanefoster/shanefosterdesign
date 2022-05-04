@@ -1,0 +1,61 @@
+---
+layout: casestudies
+title: Portfolio of Product Designer, Shane Foster.
+tagline: WELCOME! MY NAME IS SHANE &
+---
+{% assign sorted = site.works | sort: 'date' | reverse %}
+{% for works in sorted %}
+{% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+{% if thecycle == 'even' %}
+	{% assign flexreverse = 'u-flexRowReverse' %}
+	{% assign imagealign = 'u-textLeft' %}
+{% endif %}
+{% if thecycle == 'odd' %}
+	{% assign flexreverse = '' %}
+	{% assign imagealign = 'u-textRight' %}
+{% endif %}
+	<div class="Work-short">
+		<div class="Grid Grid--alignMiddle {{ flexreverse }}">
+			<div class="Grid-cell u-md-size6of12">
+				<div class="Work-summary">
+					<div class="Grid Grid--alignMiddle">
+							{% if works.logo_path  %}
+								<div class="Grid-cell u-sm-size1of3">
+	          						<img src="{{works.logo_path}}">
+	          					</div>
+	          				{% else %}
+	          					<h2 class="Work-short-title">{{works.title}}</h2>
+	        				{% endif %}
+	        			
+	        			<div class="Grid-cell u-sm-size1of4">
+							<p class="Work-short-date u-sm-spaceLeftMd u-sm-padLeftMd u-sm-borderLeft u-sm-spaceBottomNone">{{ works.date | date: "%Y" }}</p>
+						</div>
+					</div>
+					
+					<h3 class="u-spaceTopMd">{{works.subtitle}}</h3>
+
+					<p>{{works.excerpt1}}</p>
+					<p>{{works.excerpt2}}</p>
+					<div class="u-displayBlock u-textCenter u-spaceEndsXXLg u-md-textLeft">
+                        {% if works.title contains 'Membio' %}
+                            <a href="{{works.url}}"  class="Button">See Preview→</a>
+                            <p style="font-size: 80%; margin-top: 8px;">Case Study coming soon</p>
+                        {% else %}
+                            <a href="{{works.url}}" class="Button">View Case Study →</a>
+                        {% endif %}
+					</div>
+				</div>
+			</div>
+			<div class="Grid-cell u-md-size6of12 {{ imagealign }}">
+				{% if works.title contains 'moovel' or works.title contains 'Membio' %}
+                    <img class="Work-screenshot-img" src="{{ works.image_path }}" alt="{{works.title }}">
+                {% else %}
+                    <a href="{{works.url }}" class="Work-screenshot">
+						<img class="Work-screenshot-img" src="{{ works.image_path }}" alt="{{works.title }}">
+					</a>
+                {% endif %}
+			</div>
+		</div>
+	</div>
+{% endfor %}
+{{works.url }}
