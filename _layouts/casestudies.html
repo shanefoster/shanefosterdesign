@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!-- HOME TEMPLATE -->
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {% include casestudies_head.html %}
+
+  <body>
+
+    {% include casestudies_header.html %}
+
+    <main aria-label="Content">
+
+      <div class="Container">
+        <div class="Grid Grid--alignCenter">
+          <div class="Grid-cell u-size-full">
+              {{ content }}
+          </div>
+        </div>
+      </div>
+    </main>
+
+    {% include footer.html %}
+  </body>
+
+</html>
+  
