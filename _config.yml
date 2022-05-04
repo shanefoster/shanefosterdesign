@@ -27,7 +27,7 @@ excerpt_separator: <!--more-->
 collections:
   works:
     output: true
-    permalink: /:collection/:title/
+    permalink: casestudies/:title/
 
 # Build settings
 markdown: kramdown
