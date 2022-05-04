@@ -20,3 +20,9 @@ ul, ol {
 		margin:0 $su-default;
 	}
 }
+.list--callout li{
+	  border-left: 4px solid #06A68E;
+    list-style: none;
+    margin-bottom: $su-large;
+    padding-left: $su-default;
+}
