@@ -61,9 +61,7 @@
       </div>
     </div>
   </div>
-  {% if page.url != "/" %}
-    {% assign custpad = 'u-padBottomNone u-padTopXXLg' %}
-  {% endif %}
+
   
   {% if page.url == "/" %}
     {% include masthead_home.html %}
@@ -71,6 +69,8 @@
     {% include masthead_about.html %}
   {% elsif page.title == "Contact" %}
     {% include masthead_contact.html %}
+  {% elsif page.title == "Case Studies" %}
+    {% include masthead_home.html %}
   {% else %}
     {% include masthead_work.html %}
   {% endif %}
