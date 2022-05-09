@@ -1,6 +1,6 @@
 ---
 layout: casestudies
-title: Portfolio of Product Designer, Shane Foster.
+title: Case Studies
 tagline: WELCOME! MY NAME IS SHANE &
 ---
 {% assign sorted = site.works | sort: 'date' | reverse %}
@@ -37,9 +37,9 @@ tagline: WELCOME! MY NAME IS SHANE &
 					<p>{{works.excerpt1}}</p>
 					<p>{{works.excerpt2}}</p>
 					<div class="u-displayBlock u-textCenter u-spaceEndsXXLg u-md-textLeft">
-                        {% if works.title contains 'Membio' %}
-                            <a href="{{works.url}}"  class="Button">See Preview→</a>
-                            <p style="font-size: 80%; margin-top: 8px;">Case Study coming soon</p>
+                        {% if works.title contains 'Luma Health' %}
+                            <a href="#"  class="Button is-disabled">View Case Study→</a>
+                            <p style="font-size: 80%; margin-top: 8px;">Saved for Portfolio Review</p>
                         {% else %}
                             <a href="{{works.url}}" class="Button">View Case Study →</a>
                         {% endif %}
@@ -47,13 +47,9 @@ tagline: WELCOME! MY NAME IS SHANE &
 				</div>
 			</div>
 			<div class="Grid-cell u-md-size6of12 {{ imagealign }}">
-				{% if works.title contains 'moovel' or works.title contains 'Membio' %}
-                    <img class="Work-screenshot-img" src="{{ works.image_path }}" alt="{{works.title }}">
-                {% else %}
-                    <a href="{{works.url }}" class="Work-screenshot">
-						<img class="Work-screenshot-img" src="{{ works.image_path }}" alt="{{works.title }}">
-					</a>
-                {% endif %}
+                 <a href="{{works.url }}" class="Work-screenshot">
+					<img class="Work-screenshot-img" src="{{ works.image_path }}" alt="{{works.title }}">
+				</a>
 			</div>
 		</div>
 	</div>
