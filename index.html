@@ -37,8 +37,8 @@ tagline: WELCOME! MY NAME IS SHANE &
 					<p>{{works.excerpt1}}</p>
 					<p>{{works.excerpt2}}</p>
 					<!--<div class="u-displayBlock u-textCenter u-spaceEndsXXLg u-md-textLeft">
-                        {% if works.title contains 'Membio' %}
-                            <a href="{{works.url}}"  class="Button">See Preview→</a>
+                        {% if works.title contains 'Luma' %}
+                            <a href="{{works.url}}"  class="Button Disabled">Saved for Portfolio Review</a>
                             <p style="font-size: 80%; margin-top: 8px;">Case Study coming soon</p>
                         {% else %}
                             <a href="{{works.url}}" class="Button">View Case Study →</a>
@@ -47,13 +47,7 @@ tagline: WELCOME! MY NAME IS SHANE &
 				</div>
 			</div>
 			<div class="Grid-cell u-md-size6of12 {{ imagealign }}">
-				{% if works.title contains 'moovel' or works.title contains 'Membio' %}
-                    <img class="Work-screenshot-img" src="{{ works.image_path }}" alt="{{works.title }}">
-                {% else %}
-                    <a href="{{works.url }}" class="Work-screenshot">
-						<img class="Work-screenshot-img" src="{{ works.image_path }}" alt="{{works.title }}">
-					</a>
-                {% endif %}
+				<img class="Work-screenshot-img" src="{{ works.image_path }}" alt="{{works.title }}">
 			</div>
 		</div>
 	</div>
