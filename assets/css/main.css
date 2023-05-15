@@ -351,6 +351,9 @@ h4, h5, h6 {
 ul, ol {
   margin: 32px; }
 
+ul li::marker {
+  color: #27292B; }
+
 .list--bordered {
   margin: 32px 24px; }
   .list--bordered li {
@@ -618,7 +621,7 @@ footer {
 .Social-linkedin-light {
   background-image: url("../img/linkedin_light.svg"); }
 
-.Masthead {
+.Masthead-work, .Masthead-home {
   background-size: 50%;
   background-position: bottom right;
   background-repeat: no-repeat;
@@ -627,7 +630,10 @@ footer {
   text-align: center; }
 
 @media (min-width: 768px) {
-  .Masthead {
+  .Masthead-work {
+    padding: 160px 0 0 0; }
+
+  .Masthead-home {
     padding: 160px 0; } }
 .Work-short {
   border-bottom: 1px solid #e7e7e7;

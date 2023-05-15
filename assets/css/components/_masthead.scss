@@ -1,4 +1,4 @@
-.Masthead {
+.Masthead-work, .Masthead-home{
 	background-size:50%;
 	background-position:bottom right;
 	background-repeat:no-repeat;
@@ -7,7 +7,10 @@
 	text-align: center;
 }
 @media (min-width: $breakpoint-sm) { 
-  .Masthead {
-    padding: 160px 0;
+  .Masthead-work{
+    padding: 160px 0 0 0;
+  }
+  .Masthead-home {
+  	padding:160px 0;
   }
 }

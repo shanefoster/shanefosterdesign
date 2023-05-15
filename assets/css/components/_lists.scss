@@ -1,6 +1,9 @@
 ul, ol {
   margin:$su-xlarge;
 }
+ul li::marker {
+	color:$primary;
+}
 .list--bordered {
 	margin: $su-xlarge $su-large;
 
