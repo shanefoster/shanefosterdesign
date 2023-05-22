@@ -22,7 +22,7 @@ $bold-fontWeight:      700 !default;
 
 $xsmall-fontSize:           scaleFont($fontSize, -2) !default;
 $small-fontSize:            scaleFont($fontSize, -1) !default;
-$base-fontSize:              scaleFont($fontSize, 0) !default;
+$base-fontSize:              scaleFont($fontSize, 1) !default;
 $large-fontSize:             scaleFont($fontSize, 2) !default;
 $xlarge-fontSize:            scaleFont($fontSize, 4) !default;
 $xxlarge-fontSize:           scaleFont($fontSize, 8 ) !default;
@@ -210,5 +210,5 @@ h1, h2, h3, p, ul {
 }
 
 h4, h5, h6 {
-  margin-bottom: $su-small;
+  margin-bottom: $su-default;
 }

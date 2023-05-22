@@ -131,7 +131,7 @@ address {
 body {
   color: #6e7479;
   font-family: "Poppins", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 300;
   font-style: normal;
   font-variant: normal;
@@ -223,7 +223,7 @@ h3 {
   letter-spacing: 0.031640625em; }
 
 h4 {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   line-height: 1.1851851852;
   letter-spacing: 0.031640625em; }
@@ -250,7 +250,7 @@ h1, h2, h3, p, ul {
   margin-bottom: 16px; }
 
 h4, h5, h6 {
-  margin-bottom: 8px; }
+  margin-bottom: 16px; }
 
 .Grid {
   box-sizing: border-box;
