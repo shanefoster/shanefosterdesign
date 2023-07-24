@@ -23,9 +23,22 @@ ul li::marker {
 		margin:0 $su-default;
 	}
 }
+.list--callout {
+	background: #fff;
+	border-bottom: 1px solid $divider;
+	border-top:1px solid $divider;
+	margin:$su-large 0;
+	padding: $su-large;
+}
+.list--callout {
+	list-style-position: inside;
+}
 .list--callout li{
-	  border-left: 4px solid #06A68E;
-    list-style: none;
+	  color: $text--dark;
     margin-bottom: $su-large;
     padding-left: $su-default;
+
+    &:last-child {
+    	margin-bottom:0;
+    }
 }
