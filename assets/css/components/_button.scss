@@ -24,22 +24,18 @@
  */
 
 .Button {
-  background: $white;
-  border-color: $divider--dark;
-  border-radius: $border-radius;
-  border-style: solid;
-  border-width:1px;
-  border-bottom-width: 2px;
+  background: #1E1F21;
+  border-radius: 80px;
   box-sizing: border-box; /* 1 */
-  color:       $primary; /* 2 */
+  color:       $white; /* 2 */
   display: inline-block;
+  font-size:14px;
   font-weight: 400;
   margin: 0;
-  padding: $su-default $su-xxlarge;
+  padding: $su-small $su-xlarge;
   position: relative;
   text-align: center;
   text-decoration: none;
-  text-transform: uppercase;
   transition: all .25s ease-in-out;
   -moz-transition: all .25s ease-in-out;
   -webkit-transition: all .25s ease-in-out;
@@ -62,9 +58,8 @@
 .Button:hover,
 .Button:focus,
 .Button:active {
-  border: 1px solid $divider--hover;
-  border-bottom-width: 2px;
-  color:            $primary--dark;
+  background: #4B4C4D;
+  color:$white;
   text-decoration:            none;
 }
 

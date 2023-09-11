@@ -15,45 +15,33 @@ tagline: WELCOME! MY NAME IS SHANE &
 	{% assign imagealign = 'u-textRight' %}
 {% endif %}
 	<div class="Work-short">
-		<div class="Grid Grid--alignMiddle {{ flexreverse }}">
-			<div class="Grid-cell u-md-size6of12">
-				<div class="Work-summary">
-					<div class="Grid Grid--alignMiddle">
-							{% if works.logo_path  %}
-								<div class="Grid-cell u-sm-size1of3">
-	          						<img src="{{works.logo_path}}">
-	          					</div>
-	          				{% else %}
-	          					<h2 class="Work-short-title">{{works.title}}</h2>
-	        				{% endif %}
-	        			
-	        			<div class="Grid-cell u-sm-size1of4">
-							<p class="Work-short-date u-sm-spaceLeftMd u-sm-padLeftMd u-sm-borderLeft u-sm-spaceBottomNone">{{ works.date | date: "%Y" }}</p>
-						</div>
+		<div class="Grid Grid--alignMiddle">
+			<div class="Grid-cell u-md-size5of12">
+				<p class="small-text">{{works.years}} | {{works.position}}</p>
+				<div class="Grid Grid--alignMiddle">
+					<div class="Grid-cell u-md-size1of12">
+						<img class="u-md-padRightXs" src="{{ works.glyph }}" alt="{{works.title }}">
 					</div>
-					
-					<h3 class="u-spaceTopMd u-spaceBottomSm">{{works.position}}</h3>
-					<h4 class="u-spaceBottomMd">{{works.subtitle}}</h4>
 
-					<p>{{works.excerpt1}}</p>
-					<p>{{works.excerpt2}}</p>
-					<div class="u-displayBlock u-textCenter u-spaceEndsXXLg u-md-textLeft">
-                        <!--{% if works.title contains 'Stack Overflow' %}
-                        	<a href="{{works.url}}" class="Button">View Preview →</a>
-                            <p style="font-size: 80%; margin-top: 8px;">Full case study coming soon</p>
-                        {% else %}
-                            <a href="{{works.url}}" class="Button">View Case Study →</a>
-                        {% endif %}-->
-                        <a href="{{works.url}}" class="Button">View Case Study →</a>
+					<div class="Grid-cell u-md-size11of12">
+						<h2 class="u-spaceNone"><strong>{{works.title}}</strong></h2>
 					</div>
 				</div>
+				
+		
+					<p>{{works.excerpt1}}</p>
+                        {% if works.title contains 'Membio' %}
+                            <a href="{{works.url}}"  class="Button Disabled u-spaceTopXXLg ">View Preview</a>
+                            <p style="font-size: 80%; margin-top: 8px;">Case Study coming soon</p>
+                        {% else %}
+                            <a href="{{works.url}}" class="Button u-spaceTopXXLg ">View Case Study</a>
+                        {% endif %}
 			</div>
-			<div class="Grid-cell u-md-size6of12 {{ imagealign }}">
-                 <a href="{{works.url }}" class="Work-screenshot">
-					<img class="Work-screenshot-img" src="{{ works.image_path }}" alt="{{works.title }}">
-				</a>
+			<div class="Grid-cell Work-screen">
+				<img src="{{ works.image_path }}" alt="{{works.title }}">
 			</div>
 		</div>
 	</div>
 {% endfor %}
 {{works.url }}
+{% include experience.html %}

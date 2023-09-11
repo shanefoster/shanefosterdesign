@@ -15,27 +15,12 @@ tagline: WELCOME! MY NAME IS SHANE &
 	{% assign imagealign = 'u-textRight' %}
 {% endif %}
 	<div class="Work-short">
-		<div class="Grid Grid--alignMiddle {{ flexreverse }}">
+		<div class="Grid Grid--alignMiddle">
 			<div class="Grid-cell u-md-size6of12">
-				<div class="Work-summary">
-					<div class="Grid Grid--alignMiddle">
-							{% if works.logo_path  %}
-								<div class="Grid-cell u-sm-size1of3">
-	          						<img src="{{works.logo_path}}">
-	          					</div>
-	          				{% else %}
-	          					<h2 class="Work-short-title">{{works.title}}</h2>
-	        				{% endif %}
-	        			
-	        			<div class="Grid-cell u-sm-size1of4">
-							<p class="Work-short-date u-sm-spaceLeftMd u-sm-padLeftMd u-sm-borderLeft u-sm-spaceBottomNone">{{ works.date | date: "%Y" }}</p>
-						</div>
-					</div>
-					
-					<h3 class="u-spaceTopMd">{{works.position}}</h3>
-
+				<p>{{works.years}} | {{works.position}}</p>
+				<h2>{{works.title}}</h2>
+		
 					<p>{{works.excerpt1}}</p>
-					<p>{{works.excerpt2}}</p>
 					<!--<div class="u-displayBlock u-textCenter u-spaceEndsXXLg u-md-textLeft">
                         {% if works.title contains 'Luma' %}
                             <a href="{{works.url}}"  class="Button Disabled">Saved for Portfolio Review</a>
@@ -44,7 +29,6 @@ tagline: WELCOME! MY NAME IS SHANE &
                             <a href="{{works.url}}" class="Button">View Case Study →</a>
                         {% endif %}
 					</div>-->
-				</div>
 			</div>
 			<div class="Grid-cell u-md-size6of12 {{ imagealign }}">
 				<img class="Work-screenshot-img" src="{{ works.image_path }}" alt="{{works.title }}">

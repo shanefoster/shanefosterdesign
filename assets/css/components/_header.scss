@@ -10,14 +10,17 @@ header {
 }
 .Header__bar {
 	background: #fff;
-	border-bottom:1px solid $divider;
 	padding: 0;
 }
 .Header-logo {
+	float:left;
 	font-size: 18px;
 }
+.Header-image {
+	flex-basis: auto;
+}
 .Header-ginger {
-	border-radius: 50%;
+	border-radius: 16px;
 	height:112px;
 	width: 112px;
 }
@@ -27,12 +30,22 @@ header {
 }
 .Header-title {
 	color:          $text--dark;
-	letter-spacing: $small-letterSpacing;
+	font-size:20px;
+	font-weight:500;
+	letter-spacing: 0;
 	line-height:       $small-lineHeight;
-	margin: 0 0 16px 0;
+	margin:0;
+
+}
+.Header-title--work {
+    color:          $text--dark;
+	font-size:20px;
+	font-weight:500;
+	letter-spacing: 0;
+	line-height:       $small-lineHeight;
+	margin:$su-small 0;
 }
 main {
 	background: #fff;
-	padding-top:$su-xxlarge;
 	position: relative;
 }

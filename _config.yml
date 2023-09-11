@@ -28,6 +28,9 @@ collections:
   works:
     output: true
     permalink: casestudies/:title/
+  designsystem:
+    output: true
+    permalink: designsystem/:title/
 
 # Build settings
 markdown: kramdown

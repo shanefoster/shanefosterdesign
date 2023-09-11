@@ -1,12 +1,9 @@
 .Work-short {
-	border-bottom: 1px solid $divider;
-	margin:         0 0 $su-xxxxlarge 0;
-	padding:        0 0 $su-xxxxlarge 0;
-
-	&:last-child {
-		border:none;
-		margin: 0;
-	}
+	border: 1px solid $divider;
+	border-radius: 32px;
+	margin: 0 0 40px 0;
+	padding: 40px;
+	position:relative;
 }
 .Work-short-title {
 	flex-basis: auto !important;
@@ -43,17 +40,17 @@
     padding:    $su-default 0 $su-xsmall 0;
   }
 }
+.Work-screen {
+	position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 295px;
+  width: 440px;
 
+}
 .Work-screenshot-img {
 	border:1px solid $divider;
 	border-radius: $border-radius-large;
-	box-shadow: $box-shadow;
-}
-.Work-screenshot-img:hover {
-	transform: translate(0, -5px);
-}
-.Work-screenshot-img {
-	transition: transform .5s;
 }
 @media (min-width: $breakpoint-sm) { 
   .Work-screenshot-img{
@@ -62,4 +59,17 @@
 }
 .Work-full {
 	max-width:10em;
+}
+.experience {
+	border-bottom:1px solid $divider;
+	color: $text--dark;
+	margin:$su-default 0 0 0;
+}
+.exp-years {
+	color: $text;
+	font-size:14px;
+}
+.exp-company {
+	font-weight:500;
+	margin-bottom:0;
 }

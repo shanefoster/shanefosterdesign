@@ -2,15 +2,15 @@
 	background-size:50%;
 	background-position:bottom right;
 	background-repeat:no-repeat;
-	border-bottom:1px solid $divider;
 	padding: $su-xxlarge 0;
 	text-align: center;
 }
 @media (min-width: $breakpoint-sm) { 
   .Masthead-work{
-    padding: 160px 0 0 0;
+  	border-bottom: 1px solid $divider;
+    padding: 64px 0 0 0;
   }
   .Masthead-home {
-  	padding:160px 0;
+  	padding:64px 0;
   }
 }

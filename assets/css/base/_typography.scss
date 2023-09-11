@@ -1,15 +1,15 @@
 // * 1. Base Typography Units
 
 $fontSize:          14px !default;
-$lineHeight:         1.5 !default;
-$letterSpacing: .025em !default;
+$lineHeight:         1.3 !default;
+$letterSpacing: 0 !default;
 
 // * 2. Typography Utility Variables
 
 // * 2.a Font Families
 
-$primary-fontFamily:    'Poppins', sans-serif !default;
-$header-fontFamily:     'Poppins', sans-serif !default;
+$primary-fontFamily:    'Heebo', sans-serif !default;
+$header-fontFamily:     'Heebo', sans-serif !default;
 
 
 // * 2.b Font Weights
@@ -25,7 +25,7 @@ $small-fontSize:            scaleFont($fontSize, -1) !default;
 $base-fontSize:              scaleFont($fontSize, 1) !default;
 $large-fontSize:             scaleFont($fontSize, 2) !default;
 $xlarge-fontSize:            scaleFont($fontSize, 4) !default;
-$xxlarge-fontSize:           scaleFont($fontSize, 8 ) !default;
+$xxlarge-fontSize:           scaleFont($fontSize, 7) !default;
 
 // * 2.d Font Letter Spacing
 
@@ -81,7 +81,7 @@ p {
 b,
 strong {
   color: $text--dark;
-  font-weight: bolder;
+  font-weight: 500;
 }
 
 small,

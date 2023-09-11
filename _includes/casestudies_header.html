@@ -38,7 +38,7 @@
           <nav>
             <ul class="nav list--inline">
               <li><a href='/casestudies' {% if current[1] == null %}class='current'{% endif %}>Case Studies</a></li>
-              <li><a href='/casestudies/about' {% if current[1] == 'about' %}class='current'{% endif %}>About</a></li>
+              <li><a href='/casestudies/about' {% if current[1] == '\/casestudies\/about' %}class='current'{% endif %}>About</a></li>
               <li><a href='/casestudies/contact' {% if current[1] == 'contact' %}class='current'{% endif %}>Contact</a></li>
             </ul>
           </nav>
@@ -47,9 +47,6 @@
         </div>
         <div class="Grid-cell u-sm-size1of8">
           <ul class="Social">
-            <li class="Social-item">
-              <a target="_blank" class="Social-link Social-twitter" href="http://twitter.com/shanefoster_14">Twitter</a>
-            </li>
             <li class="Social-item">
               <a target="_blank" class="Social-link Social-linkedin" href="https://www.linkedin.com/in/shanetfoster">LinkedIn</a>
             </li>

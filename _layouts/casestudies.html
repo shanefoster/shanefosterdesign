@@ -9,10 +9,10 @@
     {% include casestudies_header.html %}
 
     <main aria-label="Content">
-      {% if page.url == "/casestudies/" %}
-           <h3 class="Work-section Work-section-arrow u-textCenter u-spaceBottomLg">SOME OF MY WORK</h3>
-      {% endif %}
       <div class="Container">
+      {% if page.url == "/casestudies/" %}
+        <p><strong>Selected Work</strong></p>
+      {% endif %}
         <div class="Grid Grid--alignCenter">
           <div class="Grid-cell u-size-full">
               {{ content }}

@@ -7,7 +7,8 @@ $su-default:     scaleGrid(2) !default; // 16px
 $su-large:       scaleGrid(3) !default; // 24px
 $su-xlarge:      scaleGrid(4) !default; // 32px
 $su-xxlarge:     scaleGrid(6) !default; // 48px
-$su-xxxxlarge:   scaleGrid(10) !default; // 48px
+$su-xxxlarge:     scaleGrid(8) !default; // 64px
+$su-xxxxlarge:   scaleGrid(10) !default; // 80px
 
 // * 2. Responsive Variables
 
@@ -22,8 +23,8 @@ $breakpoint-md: 0;
 $breakpoint-lg: 0;
 
 @if $responsive == true {
-  $max-site-width: 1280px;
-  $min-site-width: 992px;
+  $max-site-width: 944px;
+  $min-site-width: 944px;
 
   $breakpoint-xs: 480px;
   $breakpoint-sm: 768px;

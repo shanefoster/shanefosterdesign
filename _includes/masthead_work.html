@@ -6,7 +6,7 @@
 {% elsif page.title == 'Cloudability - Onboarding' %}
   {% assign screen_shots = '/assets/img/work/cloudability/cloudability_screens_devices.png' %}
   {% assign logo_path = '/assets/img/work/cloudability/logo-cloudability.svg' %}
-{% elsif page.title == 'Cloudability - Cost Sharing' %}
+{% elsif page.title == 'Cloudability' %}
   {% assign screen_shots = '/assets/img/work/cloudability/screens_devices_cost_sharing.png' %}
   {% assign logo_path = '/assets/img/work/cloudability/logo-cloudability.svg' %}
 {% elsif page.title == 'TeamSnap – Redesign' %}
@@ -30,7 +30,7 @@
 {% elsif page.title == 'Luma Health – Telehealth' %}
   {% assign screen_shots = '/assets/img/work/lumahealth/luma_screens_devices_telehealth.png' %}
   {% assign logo_path = '/assets/img/work/lumahealth/luma.svg' %}
-{% elsif page.title == 'Luma Health - Dashboard' %}
+{% elsif page.title == 'Luma Health - Appointments' %}
   {% assign screen_shots = '/assets/img/work/lumahealth/luma_screens_devices.png' %}
   {% assign logo_path = '/assets/img/work/lumahealth/luma.svg' %}
   {% assign highlight_color = '#F8F9FF;' %}
@@ -44,13 +44,13 @@
     <div class="Grid Grid--alignMiddle">
       <div class="Grid-cell u-size-full u-sm-size1of3 u-flex u-flexCol u-flexNoWrap u-textLeft">
         {% if logo_path  %}
-          <div class="Grid-cell u-md-size2of3">
+          <div class="Grid-cell u-md-size1of3">
             <img src="{{ logo_path }}">
           </div>
         {% else %}
-          <h2 class="Header-title">{{works.title}}</h2>
+          <h2 class="Header-title--work">{{works.title}}</h2>
         {% endif %}
-        <h3 class="Header-title">
+        <h3 class="Header-title--work">
           {{ page.subtitle }}
         </h3>
             <p class="Header-subtitle">
