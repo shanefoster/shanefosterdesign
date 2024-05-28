@@ -8,32 +8,34 @@ tagline: WELCOME! MY NAME IS SHANE &
 {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
 {% if thecycle == 'even' %}
 	{% assign flexreverse = 'u-flexRowReverse' %}
-	{% assign imagealign = 'u-textLeft' %}
+	{% assign imagealign = 'u-textRight' %}
 {% endif %}
 {% if thecycle == 'odd' %}
 	{% assign flexreverse = '' %}
 	{% assign imagealign = 'u-textRight' %}
 {% endif %}
-	<div class="Work-short">
-		<div class="Grid Grid--alignMiddle">
-			<div class="Grid-cell u-md-size6of12">
-				<p>{{works.years}} | {{works.position}}</p>
-				<h2>{{works.title}}</h2>
-		
-					<p>{{works.excerpt1}}</p>
-					<!--<div class="u-displayBlock u-textCenter u-spaceEndsXXLg u-md-textLeft">
-                        {% if works.title contains 'Luma' %}
-                            <a href="{{works.url}}"  class="Button Disabled">Saved for Portfolio Review</a>
-                            <p style="font-size: 80%; margin-top: 8px;">Case Study coming soon</p>
-                        {% else %}
-                            <a href="{{works.url}}" class="Button">View Case Study →</a>
-                        {% endif %}
-					</div>-->
+<div class="Work-short">
+	<div class="Grid Grid--alignMiddle">
+		<div class="Grid-cell u-md-size5of12">
+			<p class="small-text">{{works.years}} | {{works.position}}</p>
+			<div class="Grid Grid--alignMiddle">
+				<div class="Grid-cell u-md-size1of12">
+					<img class="u-md-padRightXs" src="{{ works.glyph }}" alt="{{works.title }}">
+				</div>
+
+				<div class="Grid-cell u-md-size11of12">
+					<h2 class="u-spaceNone"><strong>{{works.title}}</strong></h2>
+				</div>
 			</div>
-			<div class="Grid-cell u-md-size6of12 {{ imagealign }}">
-				<img class="Work-screenshot-img" src="{{ works.image_path }}" alt="{{works.title }}">
-			</div>
+			
+	
+				<p>{{works.excerpt1}}</p>
+
+		</div>
+		<div class="Grid-cell Work-screen">
+			<img src="{{ works.image_path }}" alt="{{works.title }}">
 		</div>
 	</div>
+</div>
 {% endfor %}
 {{works.url }}

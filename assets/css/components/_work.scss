@@ -1,9 +1,10 @@
 .Work-short {
 	border: 1px solid $divider;
-	border-radius: 32px;
+	border-radius: 16px;
 	margin: 0 0 40px 0;
 	padding: 40px;
 	position:relative;
+	min-height:310px;
 }
 .Work-short-title {
 	flex-basis: auto !important;
@@ -42,7 +43,7 @@
 }
 .Work-screen {
 	position: absolute;
-  bottom: 0;
+  bottom: 1px;
   right: 0;
   height: 295px;
   width: 440px;
