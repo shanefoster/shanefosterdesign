@@ -132,7 +132,7 @@ body {
   color: #6e7479;
   font-family: "Instrument Sans", sans-serif;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 200;
   font-style: normal;
   font-variant: normal;
   text-transform: none;
@@ -236,7 +236,7 @@ h5 {
 
 h6 {
   font-size: 12px;
-  font-weight: 300;
+  font-weight: 200;
   line-height: 1.0271604938;
   letter-spacing: 0; }
 
