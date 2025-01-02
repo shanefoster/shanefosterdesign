@@ -9,11 +9,11 @@
     {% include header.html %}
 
     <main aria-label="Content">
-      {% if page.url == "/" %}
-              <h3 class="Work-section Work-section-arrow u-textCenter u-spaceBottomLg">MY EXPERIENCE</h3>
-      {% endif %}
       
       <div class="Container">
+        {% if page.url == "/" %}
+          <h2 class="u-spaceBottomLg">My Experience</h2>
+        {% endif %}
         {{ content }}
       </div>
     </main>

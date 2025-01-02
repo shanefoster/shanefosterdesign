@@ -1,5 +1,4 @@
 header {
-	padding:0;
 	position: relative;
 	text-align:center;
 
@@ -10,7 +9,8 @@ header {
 }
 .Header__bar {
 	background: #fff;
-	padding: 0;
+	padding-top: $su-default;
+	padding-bottom: $su-default;
 }
 .Header-logo {
 	float:left;

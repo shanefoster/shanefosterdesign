@@ -3,39 +3,23 @@ layout: home
 title: Portfolio of Product Designer, Shane Foster.
 tagline: WELCOME! MY NAME IS SHANE &
 ---
-{% assign sorted = site.works | sort: 'date' | reverse %}
-{% for works in sorted %}
-{% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
-{% if thecycle == 'even' %}
-	{% assign flexreverse = 'u-flexRowReverse' %}
-	{% assign imagealign = 'u-textRight' %}
-{% endif %}
-{% if thecycle == 'odd' %}
-	{% assign flexreverse = '' %}
-	{% assign imagealign = 'u-textRight' %}
-{% endif %}
-<div class="Work-short">
-	<div class="Grid Grid--alignMiddle">
-		<div class="Grid-cell u-md-size5of12">
-			<p class="small-text">{{works.years}} | {{works.position}}</p>
-			<div class="Grid Grid--alignMiddle">
-				<div class="Grid-cell u-md-size1of12">
-					<img class="u-md-padRightXs" src="{{ works.glyph }}" alt="{{works.title }}">
-				</div>
 
-				<div class="Grid-cell u-md-size11of12">
-					<h2 class="u-spaceNone"><strong>{{works.title}}</strong></h2>
-				</div>
-			</div>
-			
+{% include experience.html %}
+
+	<h2 class="u-spaceBottomLg">A Little About Me</h2>
+	<p>Over the past 13 years I’ve worked as a Product Designer for multiple consumer and enterprise applications. I have a proven track record of taking a concept from ideation to a shippable product or feature. I have a great deal of experience producing quality deliverables across a range of disciplines.</p>
+
+	<p>Due to my experiencwe, the last few years of my career have revolved around Design Systems and Design Operations. I spend my time helping design and engineering teams work more efficiently and consistently.</p>
+	<p>I’m empathetic and I care. Whether it be for the user, or those I am working with, <strong>I pride myself on being kind, and most of all, fun to work with.</strong></p>
 	
-				<p>{{works.excerpt1}}</p>
+		<p>When I'm not designing, music is my focus and my biggest passion. I love to make and produce it.</p>
+		<p>When not doing that, I'm usually watching some form of basketball. </p>
+		<h3>A Few Fun Facts</h3>
+		<ul class="u-spaceTopSm">
+			<li>Favorite Movies: Dumb & Dumber / A Beautiful Mind</li>
+			<li>Favorite Food: 🍕</li>
+			<li>Favorite Animals: Wolves / Pigmy Goats / Giraffes</li>
+			<li>Favorite TV Shows: Breaking Bad / Dexter / Friends / The Office</li>
+			<li>Favorite Books: Mindset / The Da Vinci Code</li>
+		</ul>
 
-		</div>
-		<div class="Grid-cell Work-screen">
-			<img src="{{ works.image_path }}" alt="{{works.title }}">
-		</div>
-	</div>
-</div>
-{% endfor %}
-{{works.url }}
