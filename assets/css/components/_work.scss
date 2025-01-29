@@ -64,7 +64,8 @@
 .experience {
 	border-bottom:1px solid $divider;
 	color: $text--dark;
-	margin:$su-default 0 0 0;
+	margin:0;
+	padding: $su-large 0;
 }
 .exp-years {
 	color: $text;

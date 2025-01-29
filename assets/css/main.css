@@ -727,7 +727,8 @@ footer {
 .experience {
   border-bottom: 1px solid #e7e7e7;
   color: #27292B;
-  margin: 16px 0 0 0; }
+  margin: 0;
+  padding: 24px 0; }
 
 .exp-years {
   color: #6e7479;
